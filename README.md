@@ -29,7 +29,7 @@ here is real work in progress, not staged to look finished.
   LinkedIn presence across more than one area of their work. Fully built, tested,
   and open-sourced.
 - **[ai-automation-portfolio](https://github.com/Nyce-ArrowProd/ai-automation-portfolio)**
-  — [one-line description — fill this in with what's actually in the repo]
+  I design and deploy automation systems that eliminate manual, repetitive work — connecting AI models, APIs, and business tools into workflows that run without constant human intervention.
 
 ---
 
