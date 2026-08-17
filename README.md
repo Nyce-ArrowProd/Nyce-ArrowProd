@@ -44,5 +44,5 @@ lanes, same discipline behind all of them.
 
 ## Connect
 
-- LinkedIn: [add once live]
-- FORGELINE AUTOMATION: [add site if one exists]
+- LinkedIn: www.linkedin.com/in/garryturenne
+- FORGELINE AUTOMATION: Coming Soon
