@@ -11,9 +11,6 @@ What's in this account is the actual work, not a highlight reel.
 
 ## Right Now
 
-🔨 **Building:** Lead Machine v1 — an n8n workflow that scores and routes inbound
-leads automatically. First real case study for FORGELINE AUTOMATION.
-
 📚 **Learning:** A 30-day n8n curriculum, beginner to novice, alongside the
 TripleTen AI Automation Certificate.
 
