@@ -86,8 +86,11 @@ def _run_basic(src, scale):
     return big.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
 
 
-def upscale_one(src, out_dir, scale=4, model_key="photo", fmt="png", dpi=300, binary=None):
-    """Upscale a single image. Returns the saved output path."""
+def upscale_one(src, out_dir, scale=4, model_key="photo", fmt="png", dpi=300, binary=None, name=None):
+    """Upscale a single image. Returns the saved output path.
+
+    name overrides the filename used for the output (defaults to src).
+    """
     model = MODELS[model_key]
     with Image.open(src) as probe:
         target = (probe.width * scale, probe.height * scale)
@@ -99,7 +102,7 @@ def upscale_one(src, out_dir, scale=4, model_key="photo", fmt="png", dpi=300, bi
     if img.size != target:
         img = img.resize(target, Image.LANCZOS)
 
-    dest = output_path(src, out_dir, scale, fmt)
+    dest = output_path(name or src, out_dir, scale, fmt)
     os.makedirs(out_dir, exist_ok=True)
     save_kwargs = {"dpi": (dpi, dpi)} if dpi else {}
     if fmt == "jpg":

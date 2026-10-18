@@ -5,4 +5,4 @@ if not exist .venv (
   .venv\Scripts\python -m pip install -r requirements.txt
 )
 if not exist engine\realesrgan-ncnn-vulkan.exe .venv\Scripts\python setup_engine.py
-start "" .venv\Scripts\pythonw app.py
+start "" .venv\Scripts\pythonw studio.py

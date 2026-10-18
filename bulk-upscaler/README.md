@@ -3,6 +3,26 @@
 A desktop app that AI-upscales up to 5 images at a time (2x, 3x or 4x). It runs
 on your own computer. No uploads, no credits, no monthly fee.
 
+![Upscale Studio](docs/studio-dark.png)
+
+## Upscale Studio (the dashboard)
+
+`start-windows.bat` / `start-mac.command` open **Upscale Studio**, a design-tool
+style dashboard in its own window:
+
+- **Left panel:** scale, image type cards, PNG/JPG, 300 DPI switch, save folder,
+  and the final pixel size plus print size at 300 DPI.
+- **Canvas:** drop images anywhere. When one finishes, drag the slider to compare
+  before and after (or flip to Before / After only).
+- **Right panel:** the batch, 5 slots, live status per image, overall progress.
+- **Make it yours:** moon/sun button for light or dark, palette button for 10
+  accent colors. Your choices are remembered.
+
+![Light theme](docs/studio-light.png)
+
+The original plain window is still there: `start-classic-windows.bat` or
+`python app.py`.
+
 ![Before and after](docs/before_after.png)
 
 ## How it works
@@ -42,8 +62,11 @@ Manual setup instead:
 ```
 pip install -r requirements.txt
 python setup_engine.py
-python app.py
+python studio.py
 ```
+
+Studio runs a small server on your machine only (127.0.0.1) and opens it as an
+app window in Edge or Chrome. Add `--browser` to open it in a normal tab instead.
 
 ## Using it
 

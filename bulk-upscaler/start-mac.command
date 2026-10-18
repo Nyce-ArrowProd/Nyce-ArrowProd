@@ -5,4 +5,4 @@ if [ ! -d .venv ]; then
   .venv/bin/python -m pip install -r requirements.txt
 fi
 [ -f engine/realesrgan-ncnn-vulkan ] || .venv/bin/python setup_engine.py
-.venv/bin/python app.py
+.venv/bin/python studio.py
